@@ -1,0 +1,90 @@
+ 
+<section class="row-fluid">  
+
+
+       <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                
+
+                <li class="sidebar-brand">
+                     <!-- <button ng-repeat='song in songList' class="btn btn-small btn-primary" -->
+                    <button ng-repeat='song in boySongList' class="btn btn-mini btn-primary"
+                                         ng-click='getSingerName(song)'>
+
+                                 
+
+                                     <i class="icon ion-headphone"></i>
+                                     {{song.TITLE}}
+                      </button>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+             <h3>
+                        <!-- <i class="icon ion-person-stalker"></i> -->
+                          <!-- <i class="icon ion-mic-a"></i> -->
+                      <i class="icon ion-music-note"></i>
+
+                         
+                         {{selectedSong.TITLE}}
+                </h3>
+                <ul>
+                    <i class="icon ion-person-stalker"></i>
+                    {{selectedVideo4SingerList[1].SINGERNAME}}
+                </ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                         
+                          <h4 ng-repeat='video in selectedVideoList'>
+                           <!-- <h4> -->
+
+                            <div  class="row">
+                                <div class="col-lg-3">
+                                       <img  ng-src="img/{{video.SINGERNAME}}.png" > 
+
+                                </div>
+
+                                <a href="" ng-click='getVideo4singer(video)'  >
+                                {{video.SINGERNAME}}
+
+                               </a>
+
+                           </div>
+                           
+                        </h4>
+                        
+
+
+                    </div>
+                     <video controls="controls" name="Video Name" ng-src="{{getVideoUrl()}}"></video>
+                </div>
+
+                <div>
+                     <h4><i class="icon ion-chatbox-working"></i>
+                          You may switch <i class="icon ion-loop"></i> between One Direction's  songs, or switch <i class="icon ion-loop"></i> between Viva la vida's  singers 
+                         
+
+                     </h4>
+
+                    
+
+                </div>
+                 
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+ 
+ 
+</section> 

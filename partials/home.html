@@ -1,0 +1,93 @@
+ 
+<section class="row-fluid">  
+
+
+       <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <button class="btn btn-info btn-primary">
+                    <i class="icon ion-music-note"></i>
+                        Songs
+                    </button>
+                </li>
+                
+
+                <ul class="sidebar-brand">
+                     <button ng-repeat='song in songList' class="btn btn-small btn-primary"
+
+                                         ng-click='getSingerName(song)'
+
+                                 >
+
+                                     <i class="icon ion-headphone"></i>
+                                     {{song.TITLE}}
+                      </button>
+                </ul>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+             <h3>
+                        <!-- <i class="icon ion-person-stalker"></i> -->
+                        <i class="icon ion-person-stalker"></i>
+                        <!-- <img  ng-src="img/westlife.png">  -->
+
+                   
+                      
+                          <!-- <i class="icon ion-loop"></i> -->
+                         <!-- <i class="icon ion-ios-people-outline"></i> -->
+                          
+                         {{selectedSong.TITLE}}
+                        <!-- <i class="icon ion-person"></i> -->
+                </h3>
+                <li>
+                    
+                    {{selectedSinger}}
+                </li>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                         
+                          <h4 ng-repeat='video in selectedVideoList'>
+                           <!-- <h4> -->
+
+                            <div  class="row">
+                                <div class="col-lg-3">
+                                       <img  ng-src="img/{{video.SINGERNAME}}.png" > 
+
+                                </div>
+
+                                <a href="" ng-click='getVideo4singer(video)'  >
+                                {{video.SINGERNAME}}
+
+                               </a>
+
+                           </div>
+                           
+                        </h4>
+                        
+                       
+
+                    </div>
+                     <video controls="controls" name="Video Name" ng-src="{{getVideoUrl()}}"></video>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+   
+
+
+  
+  
+ <!-- </form>  -->
+ 
+</section> 

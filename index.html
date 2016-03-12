@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Never end</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link href="css/bootstrap-combined.min.css" rel="stylesheet" />
+    <link href="css/ionicons.min.css" rel="stylesheet">
+
+    <link href="ionic/css/ionic.css" rel="stylesheet">
+    <link href="ionic/css/app.css" rel="stylesheet">
+
+
+    <link href="ionic/css/ionicons.css" rel="stylesheet">
+    <link href="ionic/css/ionicons.min.css" rel="stylesheet">
+
+   
+
+    <link href="css/app.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+<nav class="{{active}}" >
+
+          <!-- When a link in the menu is clicked, we set the active variable-->
+          <a href="#/boyband" class="home" ng-click="active='home'"><i class="icon ion-speakerphone"></i> Boy Band</a>
+
+          <a href="#/girlband" class="projects" ng-click="active='projects'">
+          <!-- <i class="icon ion-planet"></i>  -->
+           <i class="icon ion-speakerphone"></i> Girl Band</a>
+
+           <a href="#/Justin Bieber" class="services" ng-click="active='services'"><i class="icon ion-speakerphone"></i> Justin Bieber</a>
+
+            <a href="#/One direction" class="contact" ng-click="active='contact'"><i class="icon ion-speakerphone"></i> One direction</a>
+
+             <a href="#/Westlife" class="person" ng-click="active='person'"><i class="icon ion-speakerphone"></i> Westlife</a>
+
+
+
+
+          
+
+
+        
+</nav>
+
+<div ng-view >  </div>
+
+   
+
+        
+
+     <script src="ionic/js/ionic.bundle.js"></script>
+
+     <script src="bower_components/angular/angular.js"></script>
+  <!-- <script src="bower_components/angular/angular.min.js"></script> -->
+
+
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+ 
+  <script type="text/javascript"  charset="UTF-8"   src="js/jquery.min.js"></script>
+
+  <script src="js/script.js"></script> 
+
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+
+</body>
+
+</html>
